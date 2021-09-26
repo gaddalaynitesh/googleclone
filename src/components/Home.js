@@ -8,7 +8,7 @@ const Home = (props) => {
     const [results,setResults]=React.useState([]);
     const [info,setInfo] = React.useState('');
     const searchGoogle = async (e) => {
-        e.preventDefault();
+     
         try{
             const response = await axios.get(`https://www.googleapis.com/customsearch/v1?key=${key}&cx=${cx}&q=${state}`);
             if(response){
